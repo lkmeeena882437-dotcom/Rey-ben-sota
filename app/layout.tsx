@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import AnnouncementBar from "@/components/layout/AnnouncementBar";
 
 export const metadata: Metadata = {
   title: "RAY-YEN-SOTA",
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <AnnouncementBar />
         <Navbar />
         {children}
         <Footer />
