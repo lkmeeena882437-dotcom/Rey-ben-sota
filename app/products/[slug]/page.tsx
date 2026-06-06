@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { products } from "@/lib/products";
-
+import StickyAddToCart from "@/components/product/StickyAddToCart";
 export default async function ProductPage({
   params,
 }: {
@@ -17,6 +17,7 @@ export default async function ProductPage({
   }
 
   return (
+  <>
     <main
       style={{
         maxWidth: "1400px",
@@ -32,5 +33,10 @@ export default async function ProductPage({
         ₹{product.price.toLocaleString()}
       </h2>
     </main>
-  );
-}
+
+    <StickyAddToCart
+      name={product.name}
+      price={product.price}
+    />
+  </>
+);
