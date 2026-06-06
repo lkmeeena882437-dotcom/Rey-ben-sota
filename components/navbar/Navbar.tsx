@@ -1,3 +1,4 @@
+import CartButton from "@/components/cart/CartButton";
 export default function Navbar() {
   return (
     <header
@@ -45,7 +46,7 @@ export default function Navbar() {
           }}
         >
           <a href="/account">Account</a>
-          <a href="/cart">Cart (0)</a>
+          <CartButton />
         </div>
       </nav>
     </header>
