@@ -1,4 +1,5 @@
 import Hero from "@/components/hero/Hero";
+import FlashSaleBanner from "@/components/banner/FlashSaleBanner";
 import TrustBadges from "@/components/trust/TrustBadges";
 import ProductGrid from "@/components/product/ProductGrid";
 import CollectionGrid from "@/components/collections/CollectionGrid";
@@ -11,6 +12,7 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
+      <FlashSaleBanner />
       <TrustBadges />
       <ProductGrid products={products} />
       <CollectionGrid />
