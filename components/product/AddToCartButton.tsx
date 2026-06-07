@@ -1,6 +1,6 @@
 "use client";
 
-import { useCart } from "@/components/cart/CartContext";
+import { useCart } from "@/context/CartContext";
 
 interface AddToCartButtonProps {
   name: string;
